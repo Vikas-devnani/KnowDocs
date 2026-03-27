@@ -1,0 +1,40 @@
+
+# ─────────────────────────────────────────────
+#  KnowDocs — Python Dependencies
+# ─────────────────────────────────────────────
+
+# Core LLM & RAG
+groq==0.9.0                         # Groq API client (LLaMA3 / Mixtral)
+langchain==0.2.16                   # RAG orchestration
+langchain-community==0.2.16         # Community loaders, FAISS wrapper
+langchain-groq==0.1.9               # LangChain × Groq integration
+langchain-huggingface==0.0.3        # LangChain × HuggingFace embeddings
+
+# Embeddings (free, local)
+sentence-transformers==3.0.1        # all-MiniLM-L6-v2 and friends
+torch==2.3.1                        # PyTorch backend for sentence-transformers
+transformers==4.43.4                # HuggingFace transformer models
+
+# Vector Database
+faiss-cpu==1.8.0                    # FAISS CPU build (use faiss-gpu for GPU)
+
+# PDF Processing
+pypdf==4.3.1                        # Pure-Python PDF loader
+pdfminer.six==20231228              # Fallback / advanced PDF text extraction
+
+# UI
+streamlit==1.37.0                   # Web UI
+streamlit-extras==0.4.3             # Extra Streamlit components
+
+# Utilities
+python-dotenv==1.0.1                # Load .env API keys
+tqdm==4.66.4                        # Progress bars
+numpy==1.26.4                       # Array operations
+pandas==2.2.2                       # Data wrangling (for chunk inspection)
+loguru==0.7.2                       # Structured logging
+pydantic==2.8.2                     # Data validation / config
+
+# Dev / Testing
+pytest==8.3.2
+pytest-cov==5.0.0
+pydantic-settings==2.4.0           # pydantic v2 BaseSettings
